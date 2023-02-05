@@ -1,0 +1,15 @@
+<app-loading *ngIf="loading" ></app-loading>
+
+<div *ngIf="error" class="card animated fadeIn alert-danger alert">
+    <div>
+      Error :(
+    </div>
+    <div class="card-body">
+      <blockquote class="blockquote mb-0">
+        <p>{{ mensajeError }}</p>
+        <footer class="blockquote-footer">Actualizar el <cite title="Source Title">Token</cite></footer>
+      </blockquote>
+    </div>
+  </div>
+
+<app-cards [items]="newmusics" ></app-cards>
